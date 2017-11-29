@@ -1,0 +1,61 @@
+<resources>
+    //basic info
+    <string name="app_name">The RAGBRAI Trail</string>
+    <string name="logo">RAGBRAI Trail Logo</string>
+
+    //home page
+    <string name="travel">Travel the trail</string>
+    <string name="learn">Learn about the trail</string>
+    <string name="end">Credits</string>
+    <string name="HomePageButton">GO</string>
+
+    //Credits
+    <string name="titleCredits">Credits</string>
+    <string name="samLaw">Sam Law - App Creator</string>
+    <string name="markBecker">Mark Becker - App Creator</string>
+
+    //About
+    <string name="aboutTitle">About the Trail</string>
+    <string name="aboutRAGBRAI">RAGBRAI is a seven day biking event in which participants bike across the entire state of Iowa. RAGBRAI will run for its 46th time in the upcoming summer. It is the oldest, largest, and longest recreational bike touring event in the world. It is an amazing journey and we would recommend riding it in real life!</string>
+
+    //Choose Difficulty
+    <string name="chooseDifficultyHeader">Many kinds of people ride RAGBRAI every year. You can be:</string>
+    <string name="characterChoiceCollege">1.  A College Student</string>
+    <string name="characterChoiceAccountant">2.  An Accountant</string>
+    <string name="characterChoiceRetired">3.  A Retired Person</string>
+    <string name="WhatsTheDifference">4.  Find out the difference between characters</string>
+
+    //Difference between Characters
+    <string name="characterDifferencesTitle">The Difference of Characters</string>
+    <string name="CollegeInfo">1.  Picking a college student will give you a lot of energy to start the game, but not very much money.</string>
+    <string name="accountantInfo">2.  Picking an accountant will give you a balanced supply of energy and money.</string>
+    <string name="retiredInfo">3.  Picking a retired person will give you more money but less energy.</string>
+
+    //Pick A Character Name
+    <string name="characterQuestion">What is the Name of your Character?</string>
+
+    //Buy Supplies
+    <string name="Caseys">Casey\'s General Store</string>
+    <string name="amountYouHave">Amount You Have: $</string>
+    <string name="EnergyLevel">Energy Level:&#032;</string>
+    <string name="FoodCost">Food            $1</string>
+    <string name="HelmetCost">Helmet        $30</string>
+    <string name="SparePartsCost">Spare Part        $50</string>
+    <string name="QuantityHint">Quantity</string>
+    <string name="buySuppliesButton">Buy Supplies</string>
+    <string name="learnAboutProductsButton">Learn About Products</string>
+    <string name="ContinueButton">Continue on the Trail</string>
+
+    //Learn About Products
+    <string name="learnAboutFood">1. Buying food will replenish energy instantly depending on how much you buy. One food object will give you one energy.</string>
+    <string name="learnAboutHelmets">2. Buying a helmet will prevent injuries from accidents. Injuries can slow you down or even cause you to not complete the RAGBRAI trail.</string>
+    <string name="learnAboutSpareParts">3. Buying spare parts can solve all kinds of problems. You will want to have spare parts just in case you have problems with your bike.</string>
+
+    //Main Gameplay
+    <string name="energyLabel">Energy Level:&#032;</string>
+    <string name="distanceTraveledLabel">Distance Traveled:&#032;</string>
+    <string name="distanceOfNextStop">Distance of Next Stop:&#032;</string>
+    <string name="remainingDistance">Remaining Distance:&#032;</string>
+
+
+</resources>
