@@ -6,4 +6,196 @@
     android:layout_height="match_parent"
     tools:context="markbecker.theragbraitrail.BuySupplies">
 
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/Caseys"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/Caseys"
+            android:textAllCaps="true"
+            android:textColor="#dddddd"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="47dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <TextView
+            android:id="@+id/AmountYouHave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/Caseys"
+            android:layout_below="@+id/Caseys"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/amountYouHave"
+            android:textAlignment="textStart"
+            android:textColor="#dddddd"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/currentSpareParts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/currentHelmets"
+            android:layout_below="@+id/currentHelmets"
+            android:layout_marginTop="12dp"
+            android:text="@string/SparePartSupply"
+            android:textColor="#dddddd"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/currentHelmets"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/energyLevel"
+            android:layout_below="@+id/energyLevel"
+            android:layout_marginTop="12dp"
+            android:text="@string/HelmetSupply"
+            android:textColor="#dddddd"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/energyLevel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/AmountYouHave"
+            android:layout_below="@+id/currentMoney"
+            android:layout_marginTop="12dp"
+            android:text="@string/EnergyLevel"
+            android:textColor="#dddddd"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/currentMoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/AmountYouHave"
+            android:layout_alignBottom="@+id/AmountYouHave"
+            android:layout_toEndOf="@+id/AmountYouHave"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/currentEnergy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/energyLevel"
+            android:layout_toEndOf="@+id/energyLevel"
+            android:layout_marginStart="4dp"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/learnAboutProductsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/learnAboutProductsButton"
+            tools:text="@string/learnAboutProductsButton"
+            android:layout_below="@+id/currentSpareParts"
+            android:layout_alignStart="@+id/continueButton" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/learnAboutProductsButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp">
+
+            <RadioButton
+                android:id="@+id/buyFood"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="@string/FoodCost"
+                android:textColor="#dddddd"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/buyHelmet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:text="@string/HelmetCost"
+                android:textColor="#dddddd"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/buySparePart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:text="@string/SparePartsCost"
+                android:textColor="#dddddd"
+                android:textSize="20sp" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:hint="@string/QuantityHint"
+            android:inputType="number"
+            android:textSize="14sp"
+            android:layout_below="@+id/radioGroup3"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:id="@+id/buySuppliesButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/buySuppliesButton"
+            android:layout_marginTop="11dp"
+            android:layout_below="@+id/quantity"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:id="@+id/continueButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ContinueButton"
+            android:layout_below="@+id/buySuppliesButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:id="@+id/currentHelmetSupply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/currentHelmets"
+            android:layout_toEndOf="@+id/currentHelmets"
+            android:layout_marginStart="4dp"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/currentSparePartSupply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/currentSpareParts"
+            android:layout_toEndOf="@+id/currentSpareParts"
+            android:layout_marginStart="4dp"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
 </android.support.constraint.ConstraintLayout>

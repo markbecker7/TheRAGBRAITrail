@@ -45,6 +45,9 @@
     <string name="buySuppliesButton">Buy Supplies</string>
     <string name="learnAboutProductsButton">Learn About Products</string>
     <string name="ContinueButton">Continue on the Trail</string>
+    <string name="HelmetSupply">Helmets:&#032;</string>
+    <string name="SparePartSupply">Spare Parts:&#032;</string>
+
 
     //Learn About Products
     <string name="learnAboutFood">1. Buying food will replenish energy instantly depending on how much you buy. One food object will give you one energy.</string>
@@ -57,5 +60,36 @@
     <string name="distanceOfNextStop">Distance of Next Stop:&#032;</string>
     <string name="remainingDistance">Remaining Distance:&#032;</string>
 
+    //You Lose
+    <string name="gameOver">Game Over</string>
+    <string name="loseDescription">You did not finish the RAGBRAI trail</string>
+    <string name="btnLosePage">Try Again</string>
+    <string name="losePicture">Sad Stick Figure</string>
+    <string name="arrowPic">Arrow</string>
+
+    //You Win
+    <string name="youWinPicture">Happy Stick Figure</string>
+    <string name="btnYouWin">Play Again</string>
+    <string name="congrats">Congrats!</string>
+    <string name="winPageDescription">You finished the RAGBRAI trail.</string>
+
+    //Towns
+    <string name="next">Next</string>
+    <string name="titleTown1">Title Town 1</string>
+    <string name="descriptionTown1">Description Town 1</string>
+    <string name="titleTown2">Title Town 2</string>
+    <string name="descriptionTown2">Description Town 2</string>
+    <string name="titleTown3">Title Town 3</string>
+    <string name="descriptionTown3">Description Town 3</string>
+    <string name="titleTown4">Title Town 4</string>
+    <string name="descriptionTown4">Description Town 4</string>
+    <string name="titleTown5">Title Town 5</string>
+    <string name="descriptionTown5">Description Town 5</string>
+    <string name="titleTown6">Title Town 6</string>
+    <string name="descriptionTown6">Description Town 6</string>
+    <string name="titleTown7">Title Town 7</string>
+    <string name="descriptionTown7">Description Town 7</string>
+    <string name="titleTown8">Title Town 8</string>
+    <string name="descriptionTown8">Description Town 8</string>
 
 </resources>

@@ -6,4 +6,65 @@
     android:layout_height="match_parent"
     tools:context="markbecker.theragbraitrail.TheDifferenceBetweenCharacters">
 
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/differenceOfCharacters"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="15dp"
+            android:text="@string/characterDifferencesTitle"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:textSize="35sp" />
+
+
+        <TextView
+            android:id="@+id/collegeInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/differenceOfCharacters"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="39dp"
+            android:text="@string/CollegeInfo"
+            android:textColor="#dddddd"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/accountantInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/collegeInfo"
+            android:layout_below="@+id/collegeInfo"
+            android:layout_marginTop="42dp"
+            android:text="@string/accountantInfo"
+            android:textColor="#dddddd"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/retiredInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/accountantInfo"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="42dp"
+            android:text="@string/retiredInfo"
+            android:textColor="#dddddd"
+            android:textSize="24sp" />
+
+    </RelativeLayout>
 </android.support.constraint.ConstraintLayout>

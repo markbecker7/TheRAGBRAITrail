@@ -24,7 +24,17 @@
         <activity android:name=".NameCharacter" />
         <activity android:name=".BuySupplies" />
         <activity android:name=".LearnAboutProducts" />
-        <activity android:name=".Gameplay"></activity>
+        <activity android:name=".Gameplay" />
+        <activity android:name=".YouLose" />
+        <activity android:name=".YouWin" />
+        <activity android:name=".Town1" />
+        <activity android:name=".Town2" />
+        <activity android:name=".Town3" />
+        <activity android:name=".Town4" />
+        <activity android:name=".Town5" />
+        <activity android:name=".Town6" />
+        <activity android:name=".Town7" />
+        <activity android:name=".Town8"></activity>
     </application>
 
 </manifest>

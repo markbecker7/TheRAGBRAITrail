@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="markbecker.theragbraitrail.YouLose">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp">
+
+        <TextView
+            android:id="@+id/gameOver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/gameOver"
+            android:textAlignment="center"
+            android:textColor="#dddddd"
+            android:textSize="70sp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/loseDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/loseDescription"
+            android:textAlignment="center"
+            android:textColor="#dddddd"
+            android:textSize="30sp"
+            android:layout_below="@+id/gameOver"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:id="@+id/losePicture"
+            android:layout_width="200dp"
+            android:layout_height="250dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/gameOver"
+            android:layout_marginEnd="80dp"
+            android:contentDescription="@string/losePicture"
+            app:srcCompat="@drawable/youlose" />
+
+        <Button
+            android:id="@+id/btnTryAgain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23dp"
+            android:text="@string/btnLosePage"
+            android:textSize="24sp"
+            android:layout_below="@+id/loseDescription"
+            android:layout_alignStart="@+id/gameOver"
+            android:layout_marginStart="29dp" />
+
+        <TextView
+            android:id="@+id/playerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/btnTryAgain"
+            android:layout_marginTop="13dp"
+            android:textColor="#dddddd"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/arrow"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@+id/btnTryAgain"
+            android:layout_toEndOf="@+id/btnTryAgain"
+            android:contentDescription="@string/arrowPic"
+            app:srcCompat="@drawable/arrow" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

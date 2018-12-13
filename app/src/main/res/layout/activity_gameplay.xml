@@ -6,4 +6,109 @@
     android:layout_height="match_parent"
     tools:context="markbecker.theragbraitrail.Gameplay">
 
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/animationSet"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:contentDescription="@string/logo"
+            android:scaleType="matrix" />
+
+        <TextView
+            android:id="@+id/currentEnergy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/animationSet"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="28dp"
+            android:text="@string/energyLabel"
+            android:textColor="#dddddd"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/distanceTraveled"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/currentEnergy"
+            android:layout_below="@+id/currentEnergy"
+            android:layout_marginTop="24dp"
+            android:text="@string/distanceTraveledLabel"
+            android:textColor="#dddddd"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/nextStopDistance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/distanceTraveled"
+            android:layout_below="@+id/distanceTraveled"
+            android:layout_marginTop="24dp"
+            android:text="@string/distanceOfNextStop"
+            android:textColor="#dddddd"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/distanceRemaining"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/nextStopDistance"
+            android:layout_below="@+id/nextStopDistance"
+            android:layout_marginTop="25dp"
+            android:text="@string/remainingDistance"
+            android:textColor="#dddddd"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/valueEnergy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/currentEnergy"
+            android:layout_toEndOf="@+id/currentEnergy"
+            android:textColor="#dddddd"
+            android:layout_marginStart="4dp"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/valueDistanceTraveled"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/distanceTraveled"
+            android:layout_toEndOf="@+id/distanceTraveled"
+            android:textColor="#dddddd"
+            android:layout_marginStart="4dp"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/valueDistanceOfNextStop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/nextStopDistance"
+            android:layout_toEndOf="@+id/nextStopDistance"
+            android:textColor="#dddddd"
+            android:layout_marginStart="4dp"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/valueRemainingDistance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/distanceRemaining"
+            android:layout_toEndOf="@+id/distanceRemaining"
+            android:textColor="#dddddd"
+            android:layout_marginStart="4dp"
+            android:textSize="24sp" />
+    </RelativeLayout>
 </android.support.constraint.ConstraintLayout>
