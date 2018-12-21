@@ -112,9 +112,7 @@ public class GlobalVariables extends Application implements Serializable {
     }
 
     public void subtractHelmet(int value) {
-        if(helmet >= value) {
-            helmet -= value;
-        }
+        helmet -= value;
     }
 
     public int getHelmet(){
@@ -127,9 +125,7 @@ public class GlobalVariables extends Application implements Serializable {
     }
 
     public void subtractSparePart(int value) {
-        if(spareParts >= value) {
-            spareParts -= value;
-        }
+        spareParts -= value;
     }
 
     public int getSpareParts(){
@@ -197,13 +193,13 @@ public class GlobalVariables extends Application implements Serializable {
             "You bike against a breeze. Lose 25 energy.", //50
             "You bike up a small hill. Lose 25 energy.", //51
             "You miss your afternoon nap. Lose 25 energy.", //52
-            "Lose 25 energy.", //53
-            "Lose 25 energy.", //54
-            "Lose 25 energy.", //55
-            "Lose 25 energy.", //56
-            "Lose 25 energy.", //57
-            "Lose 25 energy.", //58
-            "Lose 25 energy.", //59
+            "You eat too many sweets. Lose 25 energy.", //53
+            "You are in a bad mood. Lose 25 energy.", //54
+            "You forget to pump up your tires all the way. Lose 25 energy.", //55
+            "You spend too much time admiring the Iowa countryside and have to catch up. Lose 25 energy.", //56
+            "You carry someone else's gear for them. Lose 25 energy.", //57
+            "You realize you did not train hard enough for this biking journey. Lose 25 energy.", //58
+            "You bike without shade for a long time. Lose 25 energy.", //59
             "You bike against a strong wind. Lose 50 energy.", //60
             "You bike up a long hill. Lose 50 energy.", //61
             "You don't get enough sleep. Lose 50 energy.", //62
@@ -211,30 +207,30 @@ public class GlobalVariables extends Application implements Serializable {
             "Your nagging friend calls your cell phone. Lose 50 energy.", //64
             "You drink too much. Lose 50 energy.", //65
             "You bike up a steep hill. Lose 50 energy.", //66
-            "Lose 50 energy.", //67
-            "Lose 50 energy.", //68
-            "Lose 50 energy.", //69
-            "Lose $25.", //70
-            "Lose $25.", //71
-            "Lose $25.", //72
-            "Lose $25.", //73
-            "Lose $25.", //74
-            "Lose $25.", //75
-            "Lose $25.", //76
-            "Lose $25.", //77
-            "Lose $25.", //78
-            "Lose $25.", //79
-            "Lose $50.", //80
-            "Lose $50.", //81
-            "Lose $50.", //71
-            "Lose $50.", //82
-            "Lose $50.", //83
-            "Lose $50.", //84
-            "Lose $50.", //85
-            "Lose $50.", //86
-            "Lose $50.", //87
-            "Lose $50.", //88
-            "Lose $50." //89
+            "You forget your morning coffee. Lose 50 energy.", //67
+            "You get a nasty cold. Lose 50 energy.", //68
+            "A crying kid in a nearby tent keeps you up all night. Lose 50 energy.", //69
+            "You buy some medicine for your muscle soreness. Lose $25.", //70
+            "You buy a lot of sweetcorn. Lose $25.", //71
+            "You buy a cushion for your bike seat. Lose $25.", //72
+            "You eat out. Lose $25.", //73
+            "You buy lottery tickets for your friends. Lose $25.", //74
+            "You go grocery shopping. Lose $25.", //75
+            "You buy a patch for the hole in your tent. Lose $25.", //76
+            "You donate to a local charity. Lose $25.", //77
+            "You misplace some cash. Lose $25.", //78
+            "You buy a nice new pair of socks. Lose $25.", //79
+            "You drop your wallet. Lose $50.", //80
+            "You spend way too much on beer. Lose $50.", //81
+            "You can't help but buy something from every general store. Lose $50.", //71
+            "You buy a souvenir. Lose $50.", //82
+            "You lend some money to a friend. Lose $50.", //83
+            "You eat at an expensive restaurant. Lose $50.", //84
+            "You buy a new tent for the night. Lose $50.", //85
+            "You buy the drinks for your group. Lose $50.", //86
+            "You buy a painting of the beautiful Iowa countryside. Lose $50.", //87
+            "You stop at a casino and don't do so good. Lose $50.", //88
+            "You buy a concert ticket for the night. Lose $50." //89
 
     };
 }

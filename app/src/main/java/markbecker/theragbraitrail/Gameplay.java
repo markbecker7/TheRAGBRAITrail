@@ -68,33 +68,66 @@ public class Gameplay extends AppCompatActivity {
                     if(randomNumber >= 80){
                         if(currentPlayer.getMoney() >= 50){
                             currentPlayer.subtractMoney(50);
+                            Toast.makeText(getApplicationContext(), currentPlayer.listOfPossibleSituations[randomNumber], Toast.LENGTH_LONG).show();
                         }
                     } else if(randomNumber >=70){
                         if(currentPlayer.getMoney() >= 25){
                             currentPlayer.subtractMoney(25);
+                            Toast.makeText(getApplicationContext(), currentPlayer.listOfPossibleSituations[randomNumber], Toast.LENGTH_LONG).show();
                         }
                     } else if(randomNumber >=60){
-                        currentPlayer.subtractEnergy(50);      //Still need to add remaining if statements for helmet and spare part losses, not energy.
+                        currentPlayer.subtractEnergy(50);
+                        Toast.makeText(getApplicationContext(), currentPlayer.listOfPossibleSituations[randomNumber], Toast.LENGTH_LONG).show();
 
                     } else if(randomNumber >=50){
                         currentPlayer.subtractEnergy(25);
+                        Toast.makeText(getApplicationContext(), currentPlayer.listOfPossibleSituations[randomNumber], Toast.LENGTH_LONG).show();
 
                     } else if(randomNumber >=40){
                         currentPlayer.subtractHelmet(1);
+                        if(currentPlayer.getHelmet() >= 0){
+                            Toast.makeText(getApplicationContext(), currentPlayer.listOfPossibleSituations[randomNumber], Toast.LENGTH_LONG).show();
+                        } else {
+                            Toast.makeText(getApplicationContext(), "You don't have a helmet and you crashed!", Toast.LENGTH_LONG).show();
+                            cancel();
+                            Intent intent = new Intent(Gameplay.this, YouLose.class);
+                            intent.putExtra("player", currentPlayer);
+                            startActivity(intent);
+                        }
 
                     } else if(randomNumber >=30){
                         currentPlayer.subtractSparePart(1);
+                        if(currentPlayer.getSpareParts() >= 0){
+                            Toast.makeText(getApplicationContext(), currentPlayer.listOfPossibleSituations[randomNumber], Toast.LENGTH_LONG).show();
+                        } else {
+                            Toast.makeText(getApplicationContext(), "You needed a spare part but don't have one!", Toast.LENGTH_LONG).show();
+                            cancel();
+                            Intent intent = new Intent(Gameplay.this, YouLose.class);
+                            intent.putExtra("player", currentPlayer);
+                            startActivity(intent);
+                        }
 
                     } else if(randomNumber >=20){
                         currentPlayer.addMoney(25);
+                        Toast.makeText(getApplicationContext(), currentPlayer.listOfPossibleSituations[randomNumber], Toast.LENGTH_LONG).show();
 
                     } else if(randomNumber >=10){
                         currentPlayer.addEnergy(25);
+                        Toast.makeText(getApplicationContext(), currentPlayer.listOfPossibleSituations[randomNumber], Toast.LENGTH_LONG).show();
 
                     } else {
-                        currentPlayer.subtractHelmet(1);
-                        currentPlayer.subtractSparePart(1);
-                        Toast.makeText(getApplicationContext(), currentPlayer.listOfPossibleSituations[randomNumber], Toast.LENGTH_LONG).show();
+                        if(currentPlayer.getHelmet() >= 0 && currentPlayer.getSpareParts() >= 0){
+                            currentPlayer.subtractHelmet(1);
+                            currentPlayer.subtractSparePart(1);
+                            Toast.makeText(getApplicationContext(), currentPlayer.listOfPossibleSituations[randomNumber], Toast.LENGTH_LONG).show();
+                        } else {
+                            Toast.makeText(getApplicationContext(), "You needed a spare part and helmet but don't have both of them!", Toast.LENGTH_LONG).show();
+                            cancel();
+                            Intent intent = new Intent(Gameplay.this, YouLose.class);
+                            intent.putExtra("player", currentPlayer);
+                            startActivity(intent);
+                        }
+
                     }
                 }
 
